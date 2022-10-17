@@ -26,7 +26,7 @@ const PokemonDetail: NextPage = ({ pokemon }) => {
               }`}
             >
               {pokemon.types.map((d) => (
-                <li>{d.type.name}</li>
+                <li key={d.type.name}>{d.type.name}</li>
               ))}
             </ul>
           </h2>
