@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { FC } from "react";
 import Pokemon from "./Pokemon";
 import axios from "axios";
 import useSWR from "swr";
@@ -7,9 +7,9 @@ interface TProps {
   limit: number;
 }
 
-const fetcher = (...args: any) =>
+const fetcher = (arg: any) =>
   axios
-    .get(...args)
+    .get(arg)
     .then((r) => r.data.results)
     .catch((e) => console.error(e));
 
