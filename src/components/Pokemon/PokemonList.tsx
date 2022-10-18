@@ -7,7 +7,7 @@ interface TProps {
   limit: number;
 }
 
-const fetcher = (...args) =>
+const fetcher = (...args: any) =>
   axios
     .get(...args)
     .then((r) => r.data.results)
