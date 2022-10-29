@@ -34,6 +34,7 @@ const About: NextPage<AboutProps> = () => {
               <li className="pr-3">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://github.com/nzkdevsaider/pokedex-nextjs"
                 >
                   <button className="bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded-full">
@@ -42,7 +43,11 @@ const About: NextPage<AboutProps> = () => {
                 </a>
               </li>
               <li className="pr-3">
-                <a target="_blank" href="https://nzkdevsaider.github.io/">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://nzkdevsaider.github.io/"
+                >
                   <button className="bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded-full">
                     Visitar página web del autor
                   </button>
