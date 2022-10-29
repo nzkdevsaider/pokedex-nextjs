@@ -38,7 +38,7 @@ const PokemonDetail: NextPage = ({ pokemon }) => {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const res = await axios.get(
-    process.env.NEXT_PUBLIC_API_URL + "/" + context.params?.id
+    process.env.NEXT_PUBLIC_API_URL + "/" + context.params?.id.toLowerCase()
   );
   const pokemon = await res.data;
 
